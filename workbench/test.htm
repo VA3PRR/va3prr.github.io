@@ -2,12 +2,15 @@
   <head>
     <link rel="stylesheet" href="/styles/main.css">
     <script language="javascript">
+      function load_nav() {
+        document.getElementById("navigation").innerHTML='<object type="text/html" data="/navigation.html"></object>';
+      }
       <noscript>
         Some features on this page may require javascript to function properly.
       </noscript>
     </script>
   </head>
-  <body>
+  <body onLoad="load_nav();">
     <div id="header">VA3PRR Pages<div>
     <div id="navigation"><div>
     <div id="main-content"><div>
