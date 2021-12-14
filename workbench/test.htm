@@ -2,9 +2,11 @@
   <head>
     <script language="javascript">
       function borp() {
-        window.title = "BUTT";
+        document.getElementById("output").innerHTML = "Hello World!";
       }
     </script>
   </head>
-  <body onclick="borp();"></body>
+  <body onload="borp();">
+    <span id="output"></span>
+  </body>
 </html>
