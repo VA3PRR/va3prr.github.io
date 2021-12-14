@@ -6,7 +6,7 @@
         Some features on this page may require javascript to function properly.
       </noscript>
       function load_nav() {
-        document.getElementById("navigation").innerHTML='<object type="text/html" data="/navigation.html"></object>';
+        document.getElementById("navigation").data ='/navigation.html';
       }
       document.getElementById("footer").innerHTML = "Stage 2: Loading navigation";
       load_nav();
@@ -15,7 +15,9 @@
   </head>
   <body>
     <div id="header">VA3PRR Pages<div>
-    <div id="navigation"><div>
+    <div id="navbar">
+      <object type="text/html" id="navigation">Awaiting resources...</object>  
+    <div>
     <div id="main-content"><div>
     <div id="footer">Stage 1: Loading framework<div>
   </body>
