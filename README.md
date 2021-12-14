@@ -1,2 +1,2 @@
 # va3prr.github.io
-Public facing pages
+Static pages of amateur radio operator VA3PRR, content pending
