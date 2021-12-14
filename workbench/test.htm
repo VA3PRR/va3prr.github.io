@@ -2,19 +2,21 @@
   <head>
     <link rel="stylesheet" href="/styles/main.css">
     <script language="javascript">
-      function load_nav() {
-        document.getElementById("navigation").innerHTML='<object type="text/html" data="/navigation.html"></object>';
-      }
-      load_nav();
       <noscript>
         Some features on this page may require javascript to function properly.
       </noscript>
+      function load_nav() {
+        document.getElementById("navigation").innerHTML='<object type="text/html" data="/navigation.html"></object>';
+      }
+      document.getElementById("footer").innerHTML = "Stage 2: Loading navigation";
+      load_nav();
+      document.getElementById("footer").innerHTML = "Stage 3: Loading content";
     </script>
   </head>
   <body>
     <div id="header">VA3PRR Pages<div>
     <div id="navigation"><div>
     <div id="main-content"><div>
-    <div id="footer"><div>
+    <div id="footer">Stage 1: Loading framework<div>
   </body>
 </html>
