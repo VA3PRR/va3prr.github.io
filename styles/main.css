@@ -1,3 +1,22 @@
 body  {
   background-color: #7A7A7A;
 }
+#header  {
+  position:     absolute;
+  top:          0;
+  left:         0;
+  z-index:      10;
+  width:        97%;
+  height:       7%;
+  margin-left:  1%;
+  border:       1px solid grey;
+}
+#navigation  {
+  
+}
+#main-content  {
+  
+}
+#footer  {
+  
+}
