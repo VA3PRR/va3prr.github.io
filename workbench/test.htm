@@ -2,20 +2,16 @@
   <head>
     <link rel="stylesheet" href="/styles/main.css">
     <script language="javascript">
-      function load_nav (e) {
-        (e || window.event).preventDefault();
-        var con = document.getElementById('navigation');
-        var xhr = new XMLHttpRequest();
-
-        xhr.onreadystatechange = function (e) { 
-          if (xhr.readyState == 4 && xhr.status == 200) {
-            con.innerHTML = xhr.responseText;
+      function load_nav() {
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+           document.getElementById("navigation").innerHTML = this.responseText;
           }
-        }
-
-        xhr.open("GET", "/navigation.html", true);
-        xhr.setRequestHeader('Content-type', 'text/html');
-        xhr.send();
+        };
+        xhttp.open("GET", "/navigation.html", true);
+        xhttp.setRequestHeader("Content-type", "text/html");
+        xhttp.send();
       }
       load_nav();
     </script>
