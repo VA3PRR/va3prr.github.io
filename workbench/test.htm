@@ -4,8 +4,8 @@
     <script language="javascript">
       function load_nav (e) {
         (e || window.event).preventDefault();
-        var con = document.getElementById('navigation')
-        ,   xhr = new XMLHttpRequest();
+        var con = document.getElementById('navigation');
+        var xhr = new XMLHttpRequest();
 
         xhr.onreadystatechange = function (e) { 
           if (xhr.readyState == 4 && xhr.status == 200) {
