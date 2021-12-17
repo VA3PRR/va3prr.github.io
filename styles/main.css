@@ -61,3 +61,11 @@ div	{
 	background-color: #404040;
 	color:					#DEDE00;
 }
+#date	{
+	position:			relative;
+	top:				1%;
+	left:				90%;
+}
+#content-image	{
+	width:		45%;
+}
