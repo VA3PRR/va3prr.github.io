@@ -65,6 +65,7 @@ div	{
 	position:			relative;
 	top:				1%;
 	border:				none;
+	border:				0;
 }
 #content-image	{
 	width:		45%;
