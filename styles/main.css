@@ -64,8 +64,7 @@ div	{
 #date	{
 	position:			relative;
 	top:				1%;
-	left:				90%;
-	width:				10%;
+	border:				none;
 }
 #content-image	{
 	width:		45%;
