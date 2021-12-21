@@ -63,9 +63,8 @@ div	{
 }
 #date	{
 	position:			relative;
-	top:				1%;
-	border:				none;
-	border:				0;
+	left:				85%;
+	border:				0px;
 }
 #content-image	{
 	width:		45%;
