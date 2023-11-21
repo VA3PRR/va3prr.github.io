@@ -10,7 +10,7 @@ body	{
 	background-color:	#4E4E4E;
 	color:				#EFEFEF;
 	font-family: 		monospace;
-	font-size:			24pt;
+	font-size:			18pt;
 	text-shadow: 		
 					1px 	1px 	0 	#2E2E2E, 
 					-1px 	1px 	0 	#2E2E2E, 
@@ -71,7 +71,7 @@ body	{
 	height:				100%;
 	flex-grow: 			1;
 	border:				0px;
-	font-size:			28pt;
+	font-size:			24pt;
 	font-family: 		monospace;
 	color:				#EFEFEF;
 	background-color:	#3E3E3E;
@@ -99,21 +99,21 @@ body	{
 	z-index: 			5;
 }
 .sstv_heading	{
-	font:				24pt monospace;
+	font:				20pt monospace;
 	font-weight: 		bolder;
 	text-align: 		center;
 	width:				15%;
 }
 .sstv_callsign	{
-	font:				24pt monospace;
+	font:				18pt monospace;
 	text-align: 		center;
 }
 .sstv_mode	{
-	font:				24pt monospace;
+	font:				18pt monospace;
 	text-align: 		center;
 }
 .sstv_datetime	{
-	font:				24pt monospace;
+	font:				18pt monospace;
 	text-align: 		center;
 }
 .sstv_thumbnail	{
