@@ -6,11 +6,8 @@ function getSource(href, target)	{
 		if(xmlhttp.readyState == 4 && xmlhttp.status == 200)	{
 			document.getElementById(target).innerHTML = xmlhttp.responseText;
 		}
-		else	{
-			console.log(xmlhttp.status);
-		}
 	}
-	href = "/content/"+href+".html";
+	href = "content/"+href+".html";
 	xmlhttp.open("GET", href, true);
 	xmlhttp.send();
 }
@@ -21,11 +18,12 @@ function getPage(href)	{
 		if(xmlhttp.readyState == 4 && xmlhttp.status == 200)	{
 			document.getElementById("content").innerHTML = xmlhttp.responseText;
 		}
-		else	{
-			console.log(xmlhttp.status);
-		}
 	}
-	href = "/content/"+href+".html";
+	href = "content/"+href+".html";
 	xmlhttp.open("GET", href, true);
 	xmlhttp.send();
+}
+
+function loadImage(href)	{
+	document.getElementById("main_image").src = href;
 }
