@@ -1,5 +1,5 @@
 document.onLoad = getSource("navigation", "navigation");
-document.onLoad = getSource("main", "content");
+document.onLoad = getSource("blog", "content");
 nav_menu_visible = "none";
 function getSource(href, target)	{
 	var xmlhttp	=	new XMLHttpRequest();
