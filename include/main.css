@@ -140,7 +140,7 @@ body	{
 	text-align: 		center;
 }
 #nav_menu	{
-	display:			none;
+	display:			inline-flex;
 	flex-grow: 			1;
 	width:				90%;
 	height:				100%;
