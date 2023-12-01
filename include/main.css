@@ -1,3 +1,4 @@
+
 div	{
 	clear:				both;
 }
@@ -53,7 +54,6 @@ body	{
 }
 #logo	{
 	position: 			relative;
-	height:				100%;
 	width:				150px;
 	z-index:			1;
 	display: 			inline-flex;
@@ -93,12 +93,23 @@ body	{
 	z-index: 			0;
 	background: 		none;
 	width:				100%;
+	padding-x:			1%;
 	height:				80%;
 	flex-grow: 			1;
 	display: 			inline-block;
 	overflow-y:			scroll;
 	overflow-x: 		wrap;
 	text-align: 		center;
+}
+#content p {
+	width:				80%;
+	position:			relative;
+	top:				0px;
+	left:				10%;
+	word-break: 		anywhere;
+	white-space: 		normal;
+	text-align: 		left;
+	text-indent: 		2%;
 }
 .sstv_table	{
 	width:				100%;
@@ -152,3 +163,8 @@ body	{
 	right:	0%;
 	flex-grow: 0.6;
 }
+a {
+	color: white;
+	font-weight: bolder;
+}
+
