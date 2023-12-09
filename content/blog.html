@@ -1,5 +1,24 @@
 <h1>Blog</h1>
 
+<h4>2023-12-08 - New stuff to learn!</h4>
+<p>
+This was a fun net, we had a total of 4 check-ins, and I think 6 images sent - check out the gallery! <br><br>
+From what I've heard tonight, and from some of the images I've received, it sounds like a few of us had issues with the software properly detecting the start and stop of an image. A couple of images submitted
+to the gallery were cropped from screenshots in the Robot36 android application. <br><br>
+If I understand correctly, all modern SSTV encoders begin with a calibration header and a VIS code before transmitting actual image content. I suspect that the images that failed to decode properly
+were a result of missing part or all of these packets. The calibration header serves as both a tuning and a timing reference; failing to properly decode this header can result in blurring, misalignment, colour smearing,
+and other artefacts. Following the calibration header, the VIS (Vertical Interval Signalling) Code tells the receiver which mode will be used to transmit the image. I'm not sure if failure to decode the VIS
+code will cause failure to decode an image in all cases, but it is a part of the initial signalling process. <br><br>
+Since these packets both happen at the very beginning of the transmission, I think it's possible there's a combination of three scenarios causing our failures to decode. Scenario 1 is just the nature of simplex; sometimes you miss stuff.
+Scenario 2 has the PTT being triggered late, missing the header and VIS code on transmit. Scenario 3 has the operator hearing the SSTV tones and triggering the receiver late. 
+<br><br>
+<img src="/img/sstv/R36_VE3ZWX_VA3PRR_20231208.jpg"><br>
+In the case of the image I sent (shown above), you can see how the loss of sync causes misalignment of colours; the background of this image is originally white, but you can see vertical blocks of white, yellow, and blue in the received version.
+Explaining why this happens is a little further ahead than I've been able to learn so far, but my understanding indicates it's an issue with loss of sync. Definitely a topic for discussion later on down the road.
+<br><br>
+As it stands, I'm still working with Friday nights, pending feedback on a better day and time. We'll meet again next <b>Friday, December 15th</b> at <b>7pm</b> on <b>VE3OME / 146.46 MHz</b>.   
+</p>
+<br><br>
 <h4>2023-12-02 - Success!</h4>
 
 <p>
