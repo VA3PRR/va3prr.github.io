@@ -167,4 +167,6 @@ a {
 	color: white;
 	font-weight: bolder;
 }
-
+li {
+	list-style: none;
+}
