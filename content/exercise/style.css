@@ -1,0 +1,105 @@
+			body	{
+				background-color: 	silver;
+			}
+			div	{
+				//border:				0.5px solid #8A8A8A;
+				width:				98%;
+				font-family: 		monospace;
+				font-size:			18pt;
+			}
+			button	{
+				border:	0.25px solid #8A8A8A;
+			}
+			#header	{
+				position:			absolute;
+				top:				0px;
+				left:				0px;
+				height:				10%;
+				margin-left:		1%;
+				margin-top: 		0.5%;
+				z-index:			1;
+			}
+			#nav	{
+				position:			absolute;
+				top:				11%;
+				left:				0;
+				margin-left:		1%;
+				height:				6%;
+				z-index:			2;
+				text-align: 		center;
+				vertical-align: 	middle;
+			}
+			#nav	button	{
+				font-weight:		bolder;
+				font-size:			20pt;
+				margin-left:		0.5%;
+				margin-right:		0.5%;
+				background-color: 	#ACACAC;
+				color: 				#000000;
+				text-align: 		center;
+				vertical-align: 	middle;
+				height:				98%;
+				width:				10%;
+			}
+			#nav	button:hover	{
+				background-color: 	#8A8A8A;
+				color: 				#FFFFFF;
+			}
+			#subnav	{
+				position:			absolute;
+				top:				17%;
+				left:				0%;
+				margin-left:		1%;
+				height:				6%;
+				z-index:			2;
+				text-align: 		center;
+				vertical-align: 	middle;
+			}
+			#subnav	button	{
+				font-weight:		bolder;
+				font-size:			16pt;
+				margin-left:		0.5%;
+				margin-right:		0.5%;
+				background-color: 	#ACACAC;
+				color: 				#000000;
+				text-align: 		center;
+				vertical-align: 	middle;
+				height:				98%;
+				width:				10%;
+			}
+			#subnav	button:hover	{
+				background-color: 	#8A8A8A;
+				color: 				#FFFFFF;
+			}
+			#content	{
+				border:				0.5px solid #8A8A8A;
+				position:			absolute;
+				top:				23%;
+				left:				0;
+				margin-left:		1%;
+				height:				69%;
+				z-index:			3;
+				text-align: 		center;
+				overflow-x:			scroll;
+			}
+			#content	p	{
+				margin:				1%;
+			}
+			#content	ul	{
+				display:			inline-block;
+				text-align: 		left;
+			}
+			#content	ol	{
+				display:			inline-block;
+				text-align: 		left;
+			}
+			#footer	{
+				position:			absolute;
+				top:				92%;
+				left:				0;
+				margin-left:		1%;
+				height:				7%;
+				z-index:			4;
+				text-align: 		center;
+				font-weight: 		bolder;
+			}
