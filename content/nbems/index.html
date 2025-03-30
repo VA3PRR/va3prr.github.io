@@ -1,0 +1,80 @@
+<center><h3>NBEMS Net</h3><br>
+<h4>
+  Digital training net
+  <br>
+  Tuesdays (Bi-Weekly), 7pm ET, VE3OME
+  <br>
+  Starting April 8, 2025
+</h4></center>
+
+<h5>Preface</h5>
+<p>
+  The purpose of this net is to train and refine a digital skillset to support ARES/AUXCOMM deployments by enabling transmission of <b><a href="https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms%20descriptions.pdf" target="_new">ICS Standard Forms</a></b>.
+  These are a set of standardized message formats used in the <b><a href="https://icscanada.ca/" target="_new">Incident Command System</a></b>, which is <i>"a command and control structure used to help manage emergency incidents and planned events. It provides the framework for standard incident management response and improves interoperability between all response organizations as well as with international cooperators."</i>
+<br>
+  In Ontario, you can obtain free <b>Incident Management System IMS-100</b> training and certification from the <a href="https://training.emergencymanagementontario.ca/GTFlex/GTOnline.dll/PublicCourse/COURSENO=COUR2024110717061000130096" target="_new">Emergency Management Ontario</a> website.
+  This is an introductory self study course which can be completed within a few hours or less, and which will help you understand the general structure we'll follow during London ARES/AUXCOMM team deployments.
+<br>
+  This document will lay out a set of guidelines, some tips, and a general roadmap for the NBEMS net. To stay focused on the training aspects of the net, all troubleshooting and software support will take place on alternate weeks, during the Digital Experimenter's Net.
+  If you have any technical difficulties during the NBEMS net, please record any errors or issues you encounter, and we'll do our best to address them before the next session.
+</p>
+
+<h5>Operating Guidelines and Caveats</h5>
+<p>
+<ul>
+<li>The VE3OME repeater has a wide reach and serves a critical ARES/AUXCOMM role; all traffic on this repeater is to be <b>voice only.</b> Please be sure your radio is configured correctly before pressing transmit.</li>
+<li>Digital traffic will take place on VA3LON, or a designated VHF simplex frequency <b>(TBD)</b>.</li>
+<li>The default mode we will use for all digital communcations is <b>8PSK-125FL</b>. This is a reliable, error corrected mode which supports most of the activities we'll cover on the net.</li>
+<li>We will use 1500 Hz as the default audio center frequency.</li>
+<li>It is assumed you have all of the necessary software installed and correctly configured before joining the net.</li>
+<li>All transmissions must contain your callsign (see next list below).</li>
+</ul>
+</p>
+<p>
+<ul>
+<li>As we are using FM, only one station can transmit at any time; during any digital operations, please hold all transmissions until your station is called.</li>
+<li>If your text entry cursor is in the middle of your text to be transmitted, FLDigi will stall there until you move the cursor to the end. Please be sure your cursor is at the end of your text before pressing transmit.</li>
+<li>Begin all text transmissions with three blank lines, a destination callsign (if there is one), and your callsign.</li>
+<li>End all text transmissions with your callsign, followed by three blanks lines.</li>
+<li>The additional white space before and after your message will help prevent the beginning and end of your transmission from being squelched out</li>
+</ul>
+</p>
+<h5>Macros and Keyboard Shortcuts</h5>
+<p>  FLDigi supports a large number of macro functions to simplify a variety of tasks during operation. These are linked to the F1 through F12 keys on your keyboard, and shown beneath the blue text entry box on the main window. 
+  We will make extensive use of a few macros for keying the transmitter, so it's recommended to familiarize yourself with the following BLUE buttons on the right hand side of the screen;
+  <br><ul>
+    <li><b>T/R</b> (F9) - Toggles between Transmit and Receive.</li>
+    <li><b>TX>></b> (F10) - Begin transmission.</li>
+    <li><b>RX||</b> (F11) - End transmission. <br>FLDigi will also end the transmission any time it encounters the following shortcut: <b>^r</b>. This can be entered by pressing <b>Shift+6</b> then the letter r immediately after (case insensitive).</li>
+    <li><b>TX>|</b> (F12) - Automatically transmits any text entered into the blue text entry box (up to the cursor), followed by <b>de (your callsign)</b>.</li>
+  </ul>
+You can modify the name and function of any macro button by right clicking on it. On a fresh install, FLDigi provides a blank macro linked to the F8 key; the first RED button the left of the T/R button. We will use this as our <b>NBEMS Sign On</b> macro.
+If you already have a macro in use at this location, you may use any other macro slot you like, just be sure to keep track of where it is. Please copy the following text into the macro editor, set the macro button label to <b>NBEMS Sign On</b>, then press apply and close;
+<textarea>
+  <MODEM:8PSK125FL>
+  <TXRSID:ON>
+  <RXRSID:ON>
+  <TX>
+
+
+  
+  <MYCALL> <MYCALL> <MYCALL>
+  <MYLOC>
+  <ZDT>
+
+
+  <RX>
+</textarea>
+In order, this will 
+<ol>
+  <li>set the OpMode to 8PSK-125FL.</li>
+  <li>Enable Reed-Solomon ID features which allow FLDigi to perform automatic tuning corrections.</li>
+  <li>Enable the transmitter.</li>
+  <li>Transmit a check-in message containing your callsign three times, followed by your grid square locator, and the current time in UTC.</li>
+  <li>Disable the transmitter.</li>
+</ol>
+You will need to fill out the <b>Operator-Station</b> section in the <b>Config Dialog</b>, which you can find in the <b>Configuration</b> menu at the top of the FLDigi main window. If you don't know your grid square locator, you can look it up <a href="https://dxcluster.ha8tks.hu/hamgeocoding/" target="_new">here</a>.
+Please enter a 6 character grid square locator like the following: <b>EN92jw</b>.
+</p>
+
+<h5>To be continued...</h5>
