@@ -9,8 +9,11 @@
 <ol>
   <li><a href="#Preface">Preface</a></li>
   <li><a href="#OpGuide">Operating Guidelines</a></li>
-  <li><a href="#Caveats">Preface</a></li>
-</ol>
+  <li><a href="#Caveats">Caveats</a></li>
+  <li><a href="#Software">Software</a></li>
+  <li><a href="#CrashCourse">FLDigi Crash Course</a></li>
+  <li><a href="#Macro">NBEMS Sign On Macro</a></li>
+</ol><br><br>
 <h4><a name="Preface">Preface</a></h4>
 <p>
   The purpose of this net is to train and refine a digital skillset to support ARES/AUXCOMM deployments by enabling transmission of <b><a href="https://training.fema.gov/emiweb/is/icsresource/assets/ics%20forms%20descriptions.pdf" target="_new">ICS Standard Forms</a></b>.
@@ -24,7 +27,7 @@
 <br>
   You can find a list of relevant resources and help documents at <a href="http://va3prr.github.io/nbems/resources.html" target="_new">http://va3prr.github.io/nbems/resources.html</a>.
 </p>
-
+<br><br>
 <h4><a name="OpGuide">Operating Guidelines</a></h4>
 <p>
 <ul>
@@ -35,7 +38,7 @@
 <li>It is assumed you have all of the necessary software installed and correctly configured before joining the net.</li>
 <li>All transmissions must contain your callsign (see next list below).</li>
 </ul>
-</p>
+</p><br><br>
 <h4><a name="Caveats">Caveats</a></h4>
 <p>
 <ul>
@@ -45,9 +48,33 @@
 <li>End all text transmissions with your callsign, followed by three blanks lines.</li>
 <li>The additional white space before and after your message will help prevent the beginning and end of your transmission from being squelched out</li>
 </ul>
+</p><br><br>
+<h4><a name="Software">Software</a></h4>
+<h5>NBEMS</h5>
+<br>
+<p>We'll start off with FLDigi, then begin including programs like FLMsg and FLAmp, and finally toward Winlink. 
+When we talk about NBEMS, we will generally be referring to the suite of software built around FLDigi. You can find all of these programs at <a href="https://www.w1hkj.org/" target="_new">w1hkj.org</a>;
+  <ul>
+    <li>FLDigi</li>
+    <li>FLMsg</li>
+    <li>FLAmp</li>
+  </ul>
+There are many useful programs available there (net control will be using FLNet), but we will only need those three.
 </p>
-<h4>Macros and Keyboard Shortcuts</h4>
-<p>  FLDigi supports a large number of macro functions to simplify a variety of tasks during operation. These are linked to the F1 through F12 keys on your keyboard, and shown beneath the blue text entry box on the main window. 
+<br>
+<h5>Winlink</h5>
+<br>
+<p>If you haven't already, you'll need to set up a Winlink account - see <a href="https://winlink.org/user" target="_new">here</a> for instructions.
+<br>
+You will need Winlink client software for your operating system; on Windows, this is <b>Winlink Express</b>, which can be <a href="https://downloads.winlink.org/">downloaded directly from the Winlink organization</a>.<br>
+Winlink is available for all major operating systems, and even provides a webmail portal if you have internet access. More detailed winlink information will be added later on a separate page.
+<br>
+Winlink also requires a <b>software modem</b>. The Winlink organization provides the VARA series of proprietary software modems in their downloads directory; we will make use of VARA FM, and attempt to make use of AX.25 Packet as well.<br>
+More details will follow in a separate page.  
+</p>
+<br><br>
+<h4><a name="#CrashCourse">FLDigi Crash Course</h4>
+<p>FLDigi supports a large number of macro functions to simplify a variety of tasks during operation. These are linked to the F1 through F12 keys on your keyboard, and shown beneath the blue text entry box on the main window. 
   We will make extensive use of a few macros for keying the transmitter, so it's recommended to familiarize yourself with the following BLUE buttons on the right hand side of the screen;
   <br><ul>
     <li><b>T/R</b> (F9) - Toggles between Transmit and Receive.</li>
@@ -55,8 +82,13 @@
     <li><b>RX||</b> (F11) - End transmission. <br>(FLDigi will also end the transmission any time it encounters the following shortcut: <b>^r</b>. This can be entered by pressing <b>Shift+6</b> followed immediately by the letter R).</li>
     <li><b>TX>|</b> (F12) - Automatically transmits any text entered into the blue text entry box (up to the cursor), followed by <b>de (your callsign)</b>.</li>
   </ul>
-You can modify the name and function of any macro button by right clicking on it. On a fresh install, FLDigi provides a blank macro linked to the F8 key; the first RED button the left of the T/R button. We will use this as our <b>NBEMS Sign On</b> macro.
-If you already have a macro in use at this location, you may use any other macro slot you like, just be sure to keep track of where it is. Please copy the following text into the macro editor, set the macro button label to <b>NBEMS Sign On</b>, then press apply and close;
+</p><br><br>
+<h4><a name="Macro">NBEMS Sign On Macro</a></h4>
+<p>
+You can modify the name and function of any macro button by right clicking on it. 
+On a fresh install, FLDigi provides a blank macro linked to the F8 key; the first RED button the left of the T/R button. We will use this as our <b>NBEMS Sign On</b> macro.
+If you already have a macro in use at this location, you may use any other macro slot you like, just be sure to keep track of where it is. 
+Please copy the following text into the macro editor, set the macro button label to <b>NBEMS Sign On</b>, then press apply and close;
 <br>
 <center>
 <textarea rows="13" cols="32">
@@ -84,7 +116,7 @@ In order, this will
   <li>Transmit a check-in message containing your callsign three times, followed by your grid square locator, and the current time in UTC.</li>
   <li>Disable the transmitter.</li>
 </ol>
-You will need to fill out the <b>Operator-Station</b> section in the <b>Config Dialog</b>, which you can find in the <b>Configuration</b> menu at the top of the FLDigi main window. If you don't know your grid square locator, you can look it up <a href="https://dxcluster.ha8tks.hu/hamgeocoding/" target="_new">here</a>.
+You will need to fill out the <b>Operator-Station</b> section in the <b>Config Dialog</b> of FLDigi, which you can find in the <b>Configuration</b> menu at the top of the FLDigi main window. If you don't know your grid square locator, you can look it up <a href="https://dxcluster.ha8tks.hu/hamgeocoding/" target="_new">here</a>.
 Please enter a 6 character grid square locator like the following: <b>EN92jw</b>.
 </p>
 
